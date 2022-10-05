@@ -9,16 +9,16 @@ import * as $2 from "./routes/index.tsx";
 import * as $$0 from "./islands/Counter.tsx";
 
 const manifest = {
-  routes: {
-    "./routes/[name].tsx": $0,
-    "./routes/api/joke.ts": $1,
-    "./routes/index.tsx": $2,
-  },
-  islands: {
-    "./islands/Counter.tsx": $$0,
-  },
-  baseUrl: import.meta.url,
-  config,
+	routes: {
+		"./routes/[name].tsx": $0,
+		"./routes/api/joke.ts": $1,
+		"./routes/index.tsx": $2,
+	},
+	islands: {
+		"./islands/Counter.tsx": $$0,
+	},
+	baseUrl: import.meta.url,
+	config,
 };
 
 export default manifest;
