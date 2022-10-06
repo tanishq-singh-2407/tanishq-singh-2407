@@ -1,5 +1,5 @@
 import { JSX } from "preact";
-import { Link } from "$components/header/index.ts";
+import { Link } from "$components/link/link.tsx";
 
 export function Header(props: JSX.HTMLAttributes<HTMLElement>) {
 	return (
