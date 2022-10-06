@@ -1,18 +1,23 @@
 import { JSX } from "preact";
-import { Link } from "./index.ts";
+import { Link } from "$components/header/index.ts";
 
 export function Header(props: JSX.HTMLAttributes<HTMLElement>) {
 	return (
 		<header
 			{...props}
-			class="h-36 sm:h-44 w-full px-10 sm:px-20 md:px-28 lg:px-32 flex justify-start items-center fixed top-0"
+			class="h-36 sm:h-44 w-full flex justify-start items-center"
 		>
 			<Link href="/" name="Home" />
 			<Link href="/resume" name="Resume" />
 
 			<div class="w-full" />
 
-			<Link href="/projects" name="Projects" />
+			<Link
+				href="https://github.com/tanishq-singh-2301"
+				target="_blank"
+				rel="noopener"
+				name="Github"
+			/>
 			<Link href="/contact" name="Contact" />
 		</header>
 	);
