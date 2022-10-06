@@ -13,7 +13,7 @@ export function Link(props: Props) {
 	return (
 		<a
 			{...props}
-			class="text-sm text-[#999] duration-200 hover:text-black font-semibold px-3"
+			class="text-sm text-[#887] duration-200 hover:text-black font-semibold px-3"
 		>
 			{props.name}
 		</a>
