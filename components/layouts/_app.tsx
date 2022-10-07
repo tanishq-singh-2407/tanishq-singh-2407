@@ -5,6 +5,8 @@ import { JSX } from "preact/jsx-runtime";
 
 type Props = JSX.HTMLAttributes<HTMLDivElement> & {
 	children: JSX.Element;
+	footer?: boolean;
+	header?: boolean;
 };
 
 export function App(props: Props) {
@@ -17,11 +19,11 @@ export function App(props: Props) {
 				<title>Tanishq Singh</title>
 			</Head>
 
-			<Header />
+			{props.header && <Header />}
 
 			{props.children}
 
-			<Footer />
+			{props.footer && <Footer />}
 		</div>
 	);
 }
