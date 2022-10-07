@@ -3,7 +3,7 @@ import { PageProps } from "$fresh/server.ts";
 
 export default function Home({ params }: PageProps) {
 	return (
-		<App>
+		<App header footer>
 			<main class="w-full flex justify-center items-center">
 				<span class="text-3xl hover:text-black duration-200 font-bold text-center">
 					{params.age === "17"
