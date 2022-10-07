@@ -1,13 +1,17 @@
 html, body {
     padding: 0;
 	margin: 0;
-	box-sizing: border-box;
 
 	font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-		Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+		Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"!important;
 
 	min-height: calc(100vh - calc(100vh - 100%));
 	height: 100%;
+}
+
+body {
+	background-image: url("paper_fibers.png");
+	background-repeat: repeat;
 }
 
 body > div {
@@ -16,4 +20,8 @@ body > div {
 
 a {
     text-decoration: none;
+}
+
+*::selection {
+	background-color: antiquewhite;
 }

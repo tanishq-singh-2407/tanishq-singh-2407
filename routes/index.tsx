@@ -5,15 +5,12 @@ export default function Home() {
 		<App>
 			<main class="w-full flex justify-center items-center">
 				<div class="flex flex-col justify-center items-center gap-3">
-					<a
-						href="https://github.com/tanishq-singh-2301"
-						target="_blank"
-						rel="noopener"
-						class="text-5xl hover:text-black duration-200 font-bold text-center"
-					>
+					<span class="text-5xl text-[#333333] hover:text-black duration-200 font-bold text-center tracking-widest">
 						TANISHQ SINGH
-					</a>
-					<span class="text-xs font-medium text-[#887]">seems minimal to me.</span>
+					</span>
+					<span class="text-xs font-medium text-[#887]">
+						seems minimal to me.
+					</span>
 				</div>
 			</main>
 		</App>
