@@ -13,7 +13,7 @@ export function App(props: Props) {
 	return (
 		<div
 			{...props}
-			class="h-full w-full px-10 sm:px-20 md:px-28 lg:px-32 flex justify-between items-center flex-col"
+			class="min-h-full w-full px-10 sm:px-20 md:px-28 lg:px-32 flex justify-between items-center flex-col"
 		>
 			<Head>
 				<title>Tanishq Singh</title>

@@ -5,7 +5,7 @@ export function Header(props: JSX.HTMLAttributes<HTMLElement>) {
 	return (
 		<header
 			{...props}
-			class="h-36 sm:h-44 w-full flex justify-start items-center"
+			class="min-h-[9rem] sm:min-h-[11rem] w-full flex justify-start items-center"
 		>
 			<Link href="/" name="Home" />
 			<Link href="/resume" name="Resume" />
