@@ -1,5 +1,5 @@
 import { App } from "$components/layouts/_app.tsx";
-import { Task } from "$components/resume-task/task.tsx";
+// import { Task } from "$components/resume/task.tsx";
 
 export default function Resume() {
 	return (
@@ -15,7 +15,7 @@ export default function Resume() {
 				<section class="w-full flex flex-col max-w-4xl">
 					<article class="w-full flex flex-col mt-20">
 						<span class="text-xl sm:text-2xl font-bold text-blue-600 tracking-wide mb-4 lg:ml-64">Projects</span>
-						<Task />
+						{/* <Task /> */}
 					</article>
 				</section>
 			</main>
