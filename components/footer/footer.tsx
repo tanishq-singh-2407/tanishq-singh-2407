@@ -7,7 +7,7 @@ export function Footer(props: JSX.HTMLAttributes<HTMLElement>) {
 			{...props}
 			class="h-36 sm:h-44 w-full flex justify-end items-center"
 		>
-			<Link href="/17" name="~17" />
+			<Link href="/17" name="~17, fullstack developer" />
 		</footer>
 	);
 }
