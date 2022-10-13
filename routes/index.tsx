@@ -1,4 +1,15 @@
 import { App } from "$components/layouts/_app.tsx";
+import { Handlers } from "$fresh/server.ts";
+
+export const handler: Handlers = {
+	async GET(req, ctx) {
+    	const resp = await ctx.render();
+    	resp.headers.set("I sent you this", "What.. What the * you are looking at??");
+    	resp.headers.set("My pet name", "kaju");
+    	
+		return resp;
+	},
+};
 
 export default function Home() {
 	return (
