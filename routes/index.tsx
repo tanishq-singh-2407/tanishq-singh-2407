@@ -4,8 +4,8 @@ import { Handlers } from "$fresh/server.ts";
 export const handler: Handlers = {
 	async GET(req, ctx) {
     	const resp = await ctx.render();
-    	resp.headers.set("I sent you this", "What.. What the * you are looking at??");
-    	resp.headers.set("My pet name", "kaju");
+    	resp.headers.set("la-la-laa-la", "What.. What the * you are looking at??");
+    	resp.headers.set("my-pet-name", "kaju");
     	
 		return resp;
 	},
