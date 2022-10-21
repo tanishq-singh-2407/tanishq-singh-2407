@@ -42,3 +42,43 @@ a {
 *::selection {
 	background-color: antiquewhite;
 }
+
+#noise {
+    background-image: url("noise.png");
+    position: absolute;
+    left: -100vw;
+    top: -100vw;
+    width: 300vw;
+    height: 300vw;
+    background-position: 0 0;
+    background-size: 500px 500px;
+    opacity: .2;
+	z-index: 99999;
+    animation: noiser .3s infinite;
+}
+
+@keyframes noiser {
+    0% {
+        transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+
+    20% {
+        transform: translate3d(100px, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+
+    40% {
+        transform: translate3d(0, 100px, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+
+    60% {
+        transform: translate3d(0, -100px, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+
+    80% {
+        transform: translate3d(-100px, 0, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+
+    100% {
+        transform: translate3d(100px, 100px, 0) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+    }
+}
