@@ -30,4 +30,4 @@ jobs:
 
       - name: Guessed NaN
         if: ${{ failure() }}
-        run: echo ${{ steps.wild_guess }}
+        run: echo ${{ fromJSON(steps.wild_guess) }}
