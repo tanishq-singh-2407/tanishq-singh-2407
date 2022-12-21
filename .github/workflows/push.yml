@@ -21,7 +21,8 @@ jobs:
         run: |
           echo "code=$(bash scripts/game.sh 'And I guess (0-9):\ 7' 'tanishq-singh-2301')" >> $GITHUB_OUTPUT
           echo $code
-          echo bash scripts/game.sh 'And I guess (0-9):\ 7' 'tanishq-singh-2301'
+
+          bash scripts/game.sh 'And I guess (0-9): 7' 'tanishq-singh-2301'
 
 
       # - name: hello
