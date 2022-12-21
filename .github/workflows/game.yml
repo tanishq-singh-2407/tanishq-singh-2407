@@ -6,7 +6,6 @@ on:
 jobs:
   game:
     name: Wild Guess
-    id: wild_guess
     runs-on: ubuntu-latest
 
     if: startsWith(github.event.issue.title, 'And I guess (0-9):')
@@ -23,15 +22,12 @@ jobs:
       #       echo "ISSUE_TITLE=${{ github.event.issue.title }}" >> $GITHUB_ENV
 
       - name: Updating README.md
+        id: wild_guess
         run: |
             echo "$TITLE $NAME $URL"
             bash scripts/game.sh "$ISSUE_TITLE" "$USERNAME"
 
-  not_a_number:
-    name: Guessed NaN
-    runs-on: ubuntu-latest
 
-    if: ${{ failure() }}
-
-    steps:
-      - run: echo ${{ steps.wild_guess }}
+      - name: Guessed NaN
+        if: ${{ failure() }}
+        run: echo ${{ steps.wild_guess }}
