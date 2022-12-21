@@ -4,9 +4,9 @@
 - ⚔️ In _`grade 12th`_ and _`17`_ (batch 2022-23).
 - 🦋 Have a _`girlfrind`_.
 - 🥺 All time favs.
-    - [_**`Dil Tadap Tadap Ke kKah Raha.`**_](https://open.spotify.com/track/2kVKDFmDFuKNR4tuDgZqWM?si=c73ba0545cea4e5b)
-    - [_**`Aap Ke Ankhon Mai Kutch.`**_](https://open.spotify.com/track/2hWUcbgPqVsvsgHMWEvSUe?si=45c9eb4c6f074338)
-    - [_**`Tera Mujse Hai Nata Koi`**_](https://open.spotify.com/track/3Jj02N4CsUY8YAn2d03M4K?si=4be4be82aa9d42f3)
+    - [_**Dil Tadap Tadap Ke kKah Raha.**_](https://open.spotify.com/track/2kVKDFmDFuKNR4tuDgZqWM?si=c73ba0545cea4e5b)
+    - [_**Aap Ke Ankhon Mai Kutch.**_](https://open.spotify.com/track/2hWUcbgPqVsvsgHMWEvSUe?si=45c9eb4c6f074338)
+    - [_**Tera Mujse Hai Nata Koi**_](https://open.spotify.com/track/3Jj02N4CsUY8YAn2d03M4K?si=4be4be82aa9d42f3)
 - 🙂 Preparing for _**`JEE '23`**_, and have exam on `24th Jan`.
 
 ### **Contact**
