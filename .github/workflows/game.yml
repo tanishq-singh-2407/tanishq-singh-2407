@@ -27,7 +27,10 @@ jobs:
         id: set-code
         run: |
             echo "$ISSUE_TITLE $USERNAME"
-            echo "code=$(bash scripts/game.sh '$ISSUE_TITLE' '$USERNAME')" >> $GITHUB_OUTPUT
+            status_code=$(bash scripts/game.sh "$ISSUE_TITLE" "$USERNAME")
+
+            echo $status_code
+            echo "code=$status_code" >> $GITHUB_OUTPUT
 
   if-failed:
     name: Entered NaN
