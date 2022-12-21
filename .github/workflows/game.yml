@@ -29,7 +29,7 @@ jobs:
             echo "$ISSUE_TITLE $USERNAME"
             he=$(bash scripts/game.sh "$ISSUE_TITLE" "$USERNAME")
             echo $he
-            echo 'code=$he' >> $GITHUB_OUTPUT
+            echo "code=$he" >> $GITHUB_OUTPUT
 
   if-failed:
     name: Entered NaN
