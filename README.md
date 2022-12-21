@@ -85,10 +85,18 @@
         <th>Actual No.</th>
     </tr>
     <tr>
+        <td align="center"><b><i> 2 </i></b></td>
+        <td> <img src="https://avatars.githubusercontent.com/tanishq-singh-2301?s=24" width="24px" height="24px" /> </td>
+        <td><b><i><a href="https://github.com/tanishq-singh-2301"> tanishq-singh-2301 </a></i></b></td>
+        <td align="center"><b><i><a href="https://github.com/tanishq-singh-2301/tanishq-singh-2301/issues/62"> 62 </a></i></b></td>
+        <td align="center"><b><i> 6 </i></b></td>
+        <td align="center"><b><i> 4 </i></b></td>
+    </tr>
+    <tr>
         <td align="center"><b><i> 1 </i></b></td>
         <td> <img src="https://avatars.githubusercontent.com/tanishq-singh-2301?s=24" width="24px" height="24px" /> </td>
         <td><b><i><a href="https://github.com/tanishq-singh-2301"> tanishq-singh-2301 </a></i></b></td>
-        <td align="center"><b><i> 61 </i></b></td>
+        <td align="center"><b><i><a href="https://github.com/tanishq-singh-2301/tanishq-singh-2301/issues/61"> 61 </a></i></b></td>
         <td align="center"><b><i> 6 </i></b></td>
         <td align="center"><b><i> 3 </i></b></td>
     </tr>
