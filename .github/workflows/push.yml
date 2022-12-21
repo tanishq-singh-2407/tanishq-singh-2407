@@ -26,7 +26,7 @@ jobs:
           code=$(bash scripts/game.sh "And I guess (0-9): 7" "tanishq-singh-2301")
 
           echo $code
-          echo $code >> $GITHUB_OUTPUT
+          echo "code='$code'" >> $GITHUB_OUTPUT
 
 
       # - name: hello
