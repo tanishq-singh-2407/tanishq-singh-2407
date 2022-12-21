@@ -45,4 +45,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - run: echo ${{ fromJSON(needs.job1.outputs.matrix) }}
+      - run: echo ${{ needs.job1.outputs.code }}
