@@ -117,11 +117,10 @@
     ```mermaid
     classDiagram
         class WildGuess
-        WildGuess : +INT issue_number
-        WildGuess : +INT2 guessed_number
-        WildGuess : +INT2 actual_number
-        WildGuess : +VARCHAR(60) username
-        WildGuess : +TIMESTAMP created_at
+        WildGuess : +Int4 issue_number
+        WildGuess : +String user_name
+        WildGuess : +Int4 what_gussed
+        WildGuess : +Int4 actual_number
 
     ```
 

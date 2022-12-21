@@ -2,6 +2,7 @@
 
 ISSUE_TITLE=$1
 USERNAME=$2
+ISSUE_NUMBER=$3
 
 regex="^And I guess \(0-9\):( |)[0-9]$"
 
@@ -12,7 +13,7 @@ if [[ $ISSUE_TITLE =~ $regex ]]; then
         NUMBER="${NUMBER:1}"
     fi
 
-    deno run --reload game/index.ts --username=$USERNAME --guessed_number=$NUMBER
+    database_uri=$database_uri deno run -A index.ts --game --username=$USERNAME --guessed_number=$NUMBER --issue_number=$ISSUE_NUMBER
 else
-    echo "failed"
+    echo "You Entered NaN."
 fi

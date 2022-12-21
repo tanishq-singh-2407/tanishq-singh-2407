@@ -25,41 +25,14 @@ jobs:
 
       - name: Updating README.md
         id: set-code
+        env:
+          database_uri: ${{ secrets.database_uri }}
         run: |
             echo "$ISSUE_TITLE $USERNAME"
             status_code=$(bash scripts/game.sh "$ISSUE_TITLE" "$USERNAME")
 
             echo $status_code
             echo "code=$status_code" >> $GITHUB_OUTPUT
-
-  if-failed:
-    name: Entered NaN
-    needs: game
-    runs-on: ubuntu-latest
-
-    if: ${{ needs.game.outputs.code == 'failed' }}
-
-    steps:
-      - uses: actions/checkout@v3
-
-      - name: Update Issue
-        uses: actions-cool/issues-helper@v3
-        with:
-          actions: 'create-comment'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ github.event.issue.number }}
-          body: |
-            You entered NaN ☠️,
-            Please enter a number between 0 and 9, refer above.
-
-      - name: Close Issue
-        uses: actions-cool/issues-helper@v3
-        with:
-          actions: 'update-issue'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ github.event.issue.number }}
-          state: 'closed'
-          labels: 'guessed NaN,wild guess'
 
   if-missed-it:
     name: You Missed It
@@ -116,3 +89,32 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           state: 'closed'
           labels: 'got it,wild guess'
+
+  if-failed:
+    name: Something Went Wrong
+    needs: game
+    runs-on: ubuntu-latest
+
+    if: ${{ needs.game.outputs.code != 'missed-it' || needs.game.outputs.code != 'got-it' }}
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Update Issue
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'create-comment'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          body: |
+            Something Went Wrong ☠️,
+            ${{ needs.game.outputs.code }}
+
+      - name: Close Issue
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'update-issue'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          state: 'closed'
+          labels: 'guessed NaN,wild guess'

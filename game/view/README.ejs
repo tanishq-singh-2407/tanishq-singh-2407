@@ -1,0 +1,11 @@
+<%- await include('view/components/header.ejs') %>
+
+<%- await include('view/components/body/index.ejs') %>
+
+---
+
+<%- await include('view/components/game/index.ejs', { topPlayers, guesses }) %>
+
+---
+
+<%- await include('view/components/footer.ejs') %>
