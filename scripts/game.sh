@@ -17,5 +17,5 @@ else
     echo "Format got changed, it must follow '$regex'."
     echo "Example: 'And I guess (0-9): 2'"
 
-    exit 418
+    exit 1
 fi
