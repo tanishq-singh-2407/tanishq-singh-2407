@@ -13,8 +13,8 @@ Add a `number`,
 then press `Submit new issue`.
 
 Examples:
-- And I guess: 10
-- And I guess:19
+- And I guess: 7
+- And I guess:2
 
 with or without spaces both will work!!
 
