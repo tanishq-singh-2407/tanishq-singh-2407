@@ -1,0 +1,33 @@
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  game:
+    name: Wild Guess
+    id: wild_guess
+    runs-on: ubuntu-latest
+
+    if: startsWith(github.event.issue.title, 'And I guess (0-9):')
+
+    steps:
+      - uses: actions/checkout@v3
+      - uses: denoland/setup-deno@v1
+        with:
+          deno-version: v1.x
+
+      - name: Set env vars
+        run: |
+            echo "USERNAME=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
+            echo "ISSUE_TITLE=${{ github.event.issue.title }}" >> $GITHUB_ENV
+
+      - name: Updating README.md
+        run: |
+            echo "$TITLE $NAME $URL"
+            bash scripts/game.sh "$ISSUE_TITLE" "$USERNAME"
+
+  not_a_number:
+    name: Guessed NaN
+    if: ${{ failure() }}
+
+    run: echo ${{ steps.wild_guess }}

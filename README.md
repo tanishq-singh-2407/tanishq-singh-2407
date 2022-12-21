@@ -9,13 +9,16 @@
     - [_**Tera Mujse Hai Nata Koi**_](https://open.spotify.com/track/3Jj02N4CsUY8YAn2d03M4K?si=4be4be82aa9d42f3)
 - 🙂 Preparing for _**`JEE '23`**_, and have exam on `24th Jan`.
 
-### **Contact**
+<details>
+<summary><b>Contact</b></summary>
+    
 - 🥽 [folio](https://www.tanishqsingh.com)
 - 📨 [hi@tanishqsingh.com](mailto:hi@tanishqsingh.com)
 - 🏋🏽 [instagram](https://www.instagram.com/tanishq_singh_2301)
 
-
-<details>
+</details>
+    
+<!-- <details>
 <summary><b>Education 💀.</b></summary>
 <b><small>Still in school brother, what did you expect ☠️.</small></b>
 
@@ -28,7 +31,7 @@
 
 </br>
 
-</details>
+</details> -->
 
 
 <details>
@@ -63,6 +66,31 @@
 
 <details>
 <summary><b>Hacktoberfest '22 - merged 11 pr's 😎.</b></summary>
+
+|No.|Open-Source|link|
+|-|-|-|
+|1|`codecademy/docs`|[PR1](https://github.com/Codecademy/docs/pull/1181), [PR2](https://github.com/Codecademy/docs/pull/1043)|
+|2|`codinasion/program`|[PR1](https://github.com/codinasion/program/pull/4727), [PR2](https://github.com/codinasion/program/pull/4724), [PR3](https://github.com/codinasion/program/pull/4723), [PR4](https://github.com/codinasion/program/pull/4719), [PR5](https://github.com/codinasion/program/pull/2166), [PR6](https://github.com/codinasion/program/pull/2164), [PR7](https://github.com/codinasion/program/pull/1979), [PR8](https://github.com/codinasion/program/pull/1978), [PR9](https://github.com/codinasion/program/pull/1975),|
+
+</details>
+
+---
+
+### _**Game?? Activity**_
+[_**Make a wild guess**_](https://github.com/tanishq-singh-2301/tanishq-singh-2301/issues/new?template=wild-guess.md&title=And%20I%20guess:%20&labels=wild%20guess), _**`number?`**_
+
+<details>
+<summary><b>Previous games 🏑</b></summary>
+
+|No.|Open-Source|link|
+|-|-|-|
+|1|`codecademy/docs`|[PR1](https://github.com/Codecademy/docs/pull/1181), [PR2](https://github.com/Codecademy/docs/pull/1043)|
+|2|`codinasion/program`|[PR1](https://github.com/codinasion/program/pull/4727), [PR2](https://github.com/codinasion/program/pull/4724), [PR3](https://github.com/codinasion/program/pull/4723), [PR4](https://github.com/codinasion/program/pull/4719), [PR5](https://github.com/codinasion/program/pull/2166), [PR6](https://github.com/codinasion/program/pull/2164), [PR7](https://github.com/codinasion/program/pull/1979), [PR8](https://github.com/codinasion/program/pull/1978), [PR9](https://github.com/codinasion/program/pull/1975),|
+
+</details>
+
+<details>
+<summary><b>How it works 🤔</b></summary>
 
 |No.|Open-Source|link|
 |-|-|-|
