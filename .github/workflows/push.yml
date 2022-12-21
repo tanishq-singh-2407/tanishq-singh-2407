@@ -19,10 +19,14 @@ jobs:
         with:
           deno-version: v1.x
 
+      - name: Set env vars
+        run: |
+            echo "USERNAME='And I guess (0-9): 7'" >> $GITHUB_ENV
+            echo "ISSUE_TITLE='tanishq-singh-2301'" >> $GITHUB_ENV
+
       - name: hlo
         id: set-code
-        run: |
-          echo "code=$(bash scripts/game.sh 'And I guess (0-9): 7' 'tanishq-singh-2301')" >> $GITHUB_OUTPUT
+        run: echo "code=$(bash scripts/game.sh $USERNAME $ISSUE_TITLE)" >> $GITHUB_OUTPUT
 
 
       # - name: hello
