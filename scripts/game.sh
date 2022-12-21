@@ -13,9 +13,13 @@ if [[ $ISSUE_TITLE =~ $regex ]]; then
     fi
 
     deno run --reload game/index.ts --username=$USERNAME --guessed_number=$NUMBER
-else
-    echo "Format got changed, it must follow '$regex'."
-    echo "Example: 'And I guess (0-9): 2'"
 
-    exit 1
+    echo "success"
+else
+    # echo "Format got changed, it must follow '$regex'."
+    # echo "Example: 'And I guess (0-9): 2'"
+
+    # exit 1
+
+    echo "failed"
 fi

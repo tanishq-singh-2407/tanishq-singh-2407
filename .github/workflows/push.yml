@@ -10,19 +10,36 @@ jobs:
     name: CI
     runs-on: ubuntu-latest
 
+    outputs:
+      code: ${{ steps.set-code.outputs.code }}
+
     steps:
       - uses: actions/checkout@v3
 
-      - name: hello
-        uses: actions-cool/issues-helper@v3
-        with:
-          actions: 'update-issue'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: 45
-          state: 'closed'
-          update-mode: 'append'
-          labels: 'Guessed NaN,wild guess'
-          body: |
-            \n\n
-            You entered NaN,
-            Please enter a number between 0 and 9, refer above.
+      - name: hlo
+        id: set-code
+        run: |
+          echo "code=$(bash scripts/game.sh 'And I guess (0-9):\ 7' 'tanishq-singh-2301')" >> $GITHUB_OUTPUT
+          echo $code
+
+
+      # - name: hello
+      #   uses: actions-cool/issues-helper@v3
+      #   with:
+      #     actions: 'update-issue'
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     issue-number: 45
+      #     state: 'closed'
+      #     update-mode: 'append'
+      #     labels: 'Guessed NaN,wild guess'
+      #     body: |
+
+      #       You entered NaN,
+      #       Please enter a number between 0 and 9, refer above.
+
+  job2:
+    needs: CI
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo ${{ fromJSON(needs.job1.outputs.matrix) }}

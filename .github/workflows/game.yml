@@ -24,38 +24,6 @@ jobs:
         id: wild_guess
         run: |
             echo "$TITLE $NAME $URL"
-            bash scripts/game.sh "$ISSUE_TITLE" "$USERNAME"
+            echo "OUTPUT=$(bash scripts/game.sh '$ISSUE_TITLE' '$USERNAME')" >> $GITHUB_ENV
 
-      - name: Guessed NaN
-        if: ${{ failure() }}
-
-        uses: actions-cool/issues-helper@v3
-        with:
-          actions: 'update-issue'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ github.event.issue.number }}
-          state: 'closed'
-          update-mode: 'replace'
-          labels: 'Guessed NaN'
-          body: |
-            You entered NaN,
-            Please enter a number between 0 and 9
-
-            Examples:
-            - And I guess: 7
-            - And I guess:4
-
-            with or without spaces both will work!!
-
-
-
-      - name: Close Comment
-        if: ${{ always() }}
-
-        uses: actions-cool/issues-helper@v3
-        with:
-          actions: 'update-issue'
-          token: ${{ secrets.GITHUB_TOKEN }}
-          issue-number: ${{ github.event.issue.number }}
-          state: 'closed'
-          labels: ''
+      - name: Check 
