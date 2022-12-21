@@ -71,7 +71,5 @@
 
 </details>
 
-<br/>
-
 ---
 ##### 🤫 Psst! look here, my [folio.](https://www.tanishqsingh.com/)
