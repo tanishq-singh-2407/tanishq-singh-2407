@@ -8,7 +8,7 @@ jobs:
     name: Wild Guess
     runs-on: ubuntu-latest
 
-    if: startsWith(github.event.issue.title, 'And I guess (0-9):')
+    # if: startsWith(github.event.issue.title, 'And I guess (0-9):')
 
     steps:
       - uses: actions/checkout@v3
