@@ -1,14 +1,13 @@
 on:
-  push:
-    branches:    
-      - '44-game'
+  issues:
+    types: [opened]
 
 jobs:
   game:
     name: Wild Guess
     runs-on: ubuntu-latest
 
-    # if: startsWith(github.event.issue.title, 'And I guess (0-9):')
+    if: startsWith(github.event.issue.title, 'And I guess (0-9):')
 
     steps:
       - uses: actions/checkout@v3
@@ -16,10 +15,10 @@ jobs:
         with:
           deno-version: v1.x
 
-      # - name: Set env vars
-      #   run: |
-      #       echo "USERNAME=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
-      #       echo "ISSUE_TITLE=${{ github.event.issue.title }}" >> $GITHUB_ENV
+      - name: Set env vars
+        run: |
+            echo "USERNAME=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
+            echo "ISSUE_TITLE=${{ github.event.issue.title }}" >> $GITHUB_ENV
 
       - name: Updating README.md
         id: wild_guess
@@ -27,7 +26,36 @@ jobs:
             echo "$TITLE $NAME $URL"
             bash scripts/game.sh "$ISSUE_TITLE" "$USERNAME"
 
-
       - name: Guessed NaN
         if: ${{ failure() }}
-        run: echo "error"
+
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'update-issue'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          state: 'closed'
+          update-mode: 'replace'
+          labels: 'Guessed NaN'
+          body: |
+            You entered NaN,
+            Please enter a number between 0 and 9
+
+            Examples:
+            - And I guess: 7
+            - And I guess:4
+
+            with or without spaces both will work!!
+
+
+
+      - name: Close Comment
+        if: ${{ always() }}
+
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'update-issue'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: ${{ github.event.issue.number }}
+          state: 'closed'
+          labels: ''

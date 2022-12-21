@@ -1,0 +1,33 @@
+name: CI
+
+on:
+  push:
+    branches:    
+      - '44-game'
+
+jobs:
+  CI:
+    name: CI
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: hello
+        uses: actions-cool/issues-helper@v3
+        with:
+          actions: 'update-issue'
+          token: ${{ secrets.GITHUB_TOKEN }}
+          issue-number: 45
+          state: 'closed'
+          update-mode: 'replace'
+          labels: 'Guessed NaN'
+          body: |
+            You entered NaN,
+            Please enter a number between 0 and 9
+
+            Examples:
+            - And I guess: 7
+            - And I guess:4
+
+            with or without spaces both will work!!
