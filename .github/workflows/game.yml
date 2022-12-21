@@ -34,7 +34,7 @@ jobs:
     needs: game
     runs-on: ubuntu-latest
 
-    if: ${{ needs.game.outputs.code == "failed" }}
+    if: ${{ needs.game.outputs.code == 'failed' }}
 
     steps:
       - uses: actions/checkout@v3
@@ -63,7 +63,7 @@ jobs:
     needs: game
     runs-on: ubuntu-latest
 
-    if: ${{ needs.game.outputs.code == "missed-it" }}
+    if: ${{ needs.game.outputs.code == 'missed-it' }}
 
     steps:
       - uses: actions/checkout@v3
@@ -92,7 +92,7 @@ jobs:
     needs: game
     runs-on: ubuntu-latest
 
-    if: ${{ needs.game.outputs.code == "got-it" }}
+    if: ${{ needs.game.outputs.code == 'got-it' }}
 
     steps:
       - uses: actions/checkout@v3
