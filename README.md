@@ -76,7 +76,7 @@
 
 ---
 
-### _**Game?? Activity**_
+<!-- ### _**Game?? Activity**_
 [_**Make a wild guess**_](https://github.com/tanishq-singh-2301/tanishq-singh-2301/issues/new?template=wild-guess.md&title=And%20I%20guess:%20&labels=wild%20guess), _**`number?`**_
 
 <details>
@@ -99,5 +99,6 @@
 
 </details>
 
----
+--- -->
+
 ##### 🤫 Psst! look here, my [folio.](https://www.tanishqsingh.com/)
