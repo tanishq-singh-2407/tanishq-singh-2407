@@ -20,8 +20,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: 45
           state: 'closed'
-          update-mode: 'replace'
-          labels: 'Guessed NaN'
+          update-mode: 'append'
+          labels: 'Guessed NaN', 'wild guess'
           body: |
             You entered NaN,
             Please enter a number between 0 and 9
