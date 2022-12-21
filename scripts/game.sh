@@ -13,7 +13,7 @@ if [[ $ISSUE_TITLE =~ $regex ]]; then
         NUMBER="${NUMBER:1}"
     fi
 
-    database_uri=$database_uri deno run -A index.ts --game --username=$USERNAME --guessed_number=$NUMBER --issue_number=$ISSUE_NUMBER
+    database_uri=$database_uri deno run -A game/index.ts --game --username=$USERNAME --guessed_number=$NUMBER --issue_number=$ISSUE_NUMBER
 else
     echo "You Entered NaN."
 fi
