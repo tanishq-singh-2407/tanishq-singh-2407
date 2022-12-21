@@ -55,7 +55,7 @@
 </details>
 
 ---
-### _**Game?? Activity:**_ [_**Make a wild guess**_](https://github.com/tanishq-singh-2301/tanishq-singh-2301/issues/new?template=wild-guess.md&title=And%20I%20guess:%20&labels=wild%20guess), _**`number?`**_
+### _**Game?? Activity:**_ [_**Make a wild guess**_](https://github.com/tanishq-singh-2301/tanishq-singh-2301/issues/new?template=wild-guess.md&title=And%20I%20guess%20(0-9):%20&labels=wild%20guess), _**`number?`**_
 
 <details>
 <summary><b>LuckBoard 🦕</b></summary>
