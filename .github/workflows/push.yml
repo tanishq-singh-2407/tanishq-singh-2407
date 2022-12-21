@@ -22,10 +22,7 @@ jobs:
       - name: hlo
         id: set-code
         run: |
-          echo "code=$(bash scripts/game.sh 'And I guess (0-9):\ 7' 'tanishq-singh-2301')" >> $GITHUB_OUTPUT
-          echo $code
-
-          bash scripts/game.sh 'And I guess (0-9): 7' 'tanishq-singh-2301'
+          echo "code=$(bash scripts/game.sh 'And I guess (0-9): 7' 'tanishq-singh-2301')" >> $GITHUB_OUTPUT
 
 
       # - name: hello
