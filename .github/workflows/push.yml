@@ -22,6 +22,7 @@ jobs:
           state: 'closed'
           update-mode: 'append'
           labels: 'Guessed NaN,wild guess'
-          body: |\n\n
+          body: |
+            \n\n
             You entered NaN,
             Please enter a number between 0 and 9, refer above.
