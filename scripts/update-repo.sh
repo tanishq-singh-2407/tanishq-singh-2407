@@ -1,5 +1,7 @@
 #! /bin/bash
 
+database_uri=$database_uri deno run -A game/index.ts --render
+
 git config --global user.name "Tanishq Singh"
 git config --global user.email "tanishq-singh-2301@users.noreply.github.com"
 git add .

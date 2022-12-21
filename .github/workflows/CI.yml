@@ -20,11 +20,7 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: Render with latest data
+      - name: Render with latest data, and Update Repo
         env:
           database_uri: ${{ secrets.database_uri }}
-        run: |
-            database_uri=$database_uri deno run -A game/index.ts --render
-
-      - name: Update Repo
         run: bash scripts/update-repo.sh

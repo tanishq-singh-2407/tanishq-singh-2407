@@ -101,7 +101,6 @@ else if (game) {
 
         try {
             await addGuess(issue_number, username, guessed_number, actual_number);
-            await renderReadme();
 
             if (guessed_number == actual_number)
                 console.log("got-it");

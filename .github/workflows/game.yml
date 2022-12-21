@@ -45,6 +45,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Render with latest data, and Update Repo
+        env:
+          database_uri: ${{ secrets.database_uri }}
+        run: bash scripts/update-repo.sh
+
       - name: Update Issue
         uses: actions-cool/issues-helper@v3
         with:
@@ -74,6 +79,11 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
+      - name: Render with latest data, and Update Repo
+        env:
+          database_uri: ${{ secrets.database_uri }}
+        run: bash scripts/update-repo.sh
+
       - name: Update Comment
         uses: actions-cool/issues-helper@v3
         with:
@@ -96,7 +106,7 @@ jobs:
     needs: game
     runs-on: ubuntu-latest
 
-    if: ${{ needs.game.outputs.code != 'missed-it' || needs.game.outputs.code != 'got-it' }}
+    if: ${{ needs.game.outputs.code != 'missed-it' && needs.game.outputs.code != 'got-it' }}
 
     steps:
       - uses: actions/checkout@v3
