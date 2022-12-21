@@ -39,7 +39,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Update Comment
+      - name: Update Issue
         uses: actions-cool/issues-helper@v3
         with:
           actions: 'create-comment'
@@ -49,7 +49,7 @@ jobs:
             You entered NaN ☠️,
             Please enter a number between 0 and 9, refer above.
 
-      - name: Close Comment
+      - name: Close Issue
         uses: actions-cool/issues-helper@v3
         with:
           actions: 'update-issue'
@@ -68,7 +68,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
 
-      - name: Update Comment
+      - name: Update Issue
         uses: actions-cool/issues-helper@v3
         with:
           actions: 'create-comment'
@@ -76,9 +76,9 @@ jobs:
           issue-number: ${{ github.event.issue.number }}
           body: |
             You Missed It 🥺,
-            Better luck next time 😊
+            Better luck next time 😊.
 
-      - name: Close Comment
+      - name: Close Issue
         uses: actions-cool/issues-helper@v3
         with:
           actions: 'update-issue'
@@ -103,8 +103,7 @@ jobs:
           actions: 'create-comment'
           token: ${{ secrets.GITHUB_TOKEN }}
           issue-number: ${{ github.event.issue.number }}
-          body: |
-            You Got it, Hurray!! 🥳🥳
+          body: You Got it, Hurray!! 🥳🥳.
 
       - name: Close Comment
         uses: actions-cool/issues-helper@v3
