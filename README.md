@@ -1,5 +1,4 @@
 # _**Hey, Kaju here 🦑**_
-
 ### **Personal Stuff**
 - ⚔️ In _`grade 12th`_ and _`17`_ (batch 2022-23).
 - 🦋 Have a _`girlfrind`_.
@@ -56,7 +55,6 @@
 </details>
 
 ---
-
 ### _**Game?? Activity:**_ [_**Make a wild guess**_](https://github.com/tanishq-singh-2301/tanishq-singh-2301/issues/new?template=wild-guess.md&title=And%20I%20guess:%20&labels=wild%20guess), _**`number?`**_
 
 <details>
@@ -128,5 +126,4 @@
 </details>
 
 ---
-
 ##### 🤫 Psst! look here, my [folio.](https://www.tanishqsingh.com)

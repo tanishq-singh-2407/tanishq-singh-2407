@@ -84,12 +84,12 @@ const renderReadme = async () => {
     const topPlayers = await getTopPlayers();
     const guesses = await getGuesses();
 
-    const html = await renderFileToString("./view/README.ejs", {
+    const html = await renderFileToString("game/view/README.ejs", {
         topPlayers: topPlayers?.rows ?? [],
         guesses: guesses?.rows ?? []
     });
-
-    await Deno.writeTextFile("../README.md", html);
+    
+    await Deno.writeTextFile("README.md", html);
 }
 
 if (render)
