@@ -22,14 +22,15 @@ jobs:
         run: |
             echo "USERNAME=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
             echo "ISSUE_TITLE=${{ github.event.issue.title }}" >> $GITHUB_ENV
+            echo "ISSUE_NUMBER=${{ github.event.issue.number }}" >> $GITHUB_ENV
 
-      - name: Updating README.md
+      - name: Make Move
         id: set-code
         env:
           database_uri: ${{ secrets.database_uri }}
         run: |
             echo "$ISSUE_TITLE $USERNAME"
-            status_code=$(bash scripts/game.sh "$ISSUE_TITLE" "$USERNAME")
+            status_code=$(bash scripts/game.sh "$ISSUE_TITLE" "$USERNAME" "$ISSUE_NUMBER")
 
             echo $status_code
             echo "code=$status_code" >> $GITHUB_OUTPUT
