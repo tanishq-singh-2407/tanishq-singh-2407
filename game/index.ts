@@ -3,4 +3,7 @@ const { username, guessed_number } = parse(Deno.args);
 
 // console.log({ username, guessed_number })
 
+console.log("missed-it");
+
+
 // deno run game/index.ts --username=tanishq-singh-2301 --guessed_number=10
