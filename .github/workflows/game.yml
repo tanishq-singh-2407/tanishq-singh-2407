@@ -1,6 +1,7 @@
 on:
-  issues:
-    types: [opened]
+  push:
+    branches:    
+      - '44-game'
 
 jobs:
   game:
@@ -16,10 +17,10 @@ jobs:
         with:
           deno-version: v1.x
 
-      - name: Set env vars
-        run: |
-            echo "USERNAME=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
-            echo "ISSUE_TITLE=${{ github.event.issue.title }}" >> $GITHUB_ENV
+      # - name: Set env vars
+      #   run: |
+      #       echo "USERNAME=${{ github.event.issue.user.login }}" >> $GITHUB_ENV
+      #       echo "ISSUE_TITLE=${{ github.event.issue.title }}" >> $GITHUB_ENV
 
       - name: Updating README.md
         run: |
@@ -28,6 +29,9 @@ jobs:
 
   not_a_number:
     name: Guessed NaN
+    runs-on: ubuntu-latest
+
     if: ${{ failure() }}
 
-    run: echo ${{ steps.wild_guess }}
+    steps:
+      - run: echo ${{ steps.wild_guess }}
