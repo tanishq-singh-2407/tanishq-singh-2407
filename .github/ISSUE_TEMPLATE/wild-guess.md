@@ -1,7 +1,7 @@
 ---
 name: wild-guess.md
 about: Guess a number
-title: ''
+title: 'And I guess: '
 labels: wild guess
 assignees: ''
 
