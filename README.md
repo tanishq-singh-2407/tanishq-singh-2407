@@ -17,7 +17,7 @@
 </details>
 <details>
 <summary><b>TechStack I use 🙂.</b></summary>
-<b><small>Pretty much all the tech depends on what I've to make.</small></b>
+<b><small>Pretty much all the tech depends on what I've make.</small></b>
 
 </br>
 
@@ -44,6 +44,7 @@
 </br>
 
 </details>
+
 <details>
 <summary><b>Hacktoberfest '22 - merged 11 pr's 😎.</b></summary>
 
