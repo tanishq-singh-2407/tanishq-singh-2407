@@ -15,25 +15,25 @@ export const contacts: Contacts[] = [
 	// },
 	{
 		name: "medium",
-		href: "https://tanishq-singh-2301.medium.com",
+		href: "https://tanishq-singh-2407.medium.com",
 	},
 	{
 		name: "github",
-		href: "https://github.com/tanishq-singh-2301",
+		href: "https://github.com/tanishq-singh-2407",
 	},
 	{
 		name: "twitter",
 		href: "https://twitter.com/Tanishk45927961",
 	},
-	{
-		name: "form",
-		href: "/contact/going-old-school",
-		target: "_self",
-	},
-	{
-		name: "instagram",
-		href: "https://www.instagram.com/tanishq_singh_2301",
-	},
+	// {
+	// 	name: "form",
+	// 	href: "/contact/going-old-school",
+	// 	target: "_self",
+	// },
+	// {
+	// 	name: "instagram",
+	// 	href: "https://www.instagram.com/tanishq_singh_2407",
+	// },
 	{
 		name: "contact@tanishqsingh.com",
 		href: "mailto:contact@tanishqsingh.com",

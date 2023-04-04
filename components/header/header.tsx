@@ -8,7 +8,7 @@ export function Header(props: JSX.HTMLAttributes<HTMLElement>) {
 			class="min-h-[9rem] sm:min-h-[11rem] w-full flex justify-between md:justify-start items-center"
 		>
 			<Link href="/" name="Home" />
-			<Link href="/resume" name="Resume" />
+			{/* <Link href="/resume" name="Resume" /> */}
 
 			<div class="hidden md:flex w-full" />
 

@@ -16,9 +16,9 @@ export default function Home() {
 		<App header footer>
 			<main class="w-full flex justify-center items-center">
 				<div class="flex flex-col justify-center items-center gap-3">
-					<span class="text-5xl text-[#333333] hover:text-black duration-200 font-bold text-center tracking-widest">
+					<h1 class="text-5xl text-[#333333] hover:text-black duration-200 font-bold text-center tracking-widest">
 						TANISHQ SINGH
-					</span>
+					</h1>
 					<span class="text-xs font-medium text-[#887]">
 						seems minimal to me.
 					</span>

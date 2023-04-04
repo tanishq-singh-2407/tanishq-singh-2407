@@ -1,1 +1,0 @@
-INSERT INTO wild_guess (issue_number, username, guessed_number, actual_number) VALUES ($1, $2, $3, $4);
