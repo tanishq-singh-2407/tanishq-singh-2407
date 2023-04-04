@@ -53,5 +53,13 @@
 
 </details>
 
+<p align="right">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://www.tanishqsingh.com/api/stats/view?source=readme&text-color=white">
+        <source media="(prefers-color-scheme: light)" srcset="https://www.tanishqsingh.com/api/stats/view?source=readme&text-color=black">
+        <img alt="profile views." src="https://www.tanishqsingh.com/api/stats/view?source=readme&text-color=white">
+    </picture>
+</p>
+
 ---
 ##### 🤫 Psst! look here, my [folio.](https://www.tanishqsingh.com)
