@@ -4,22 +4,24 @@
 
 import config from "./deno.json" assert { type: "json" };
 import * as $0 from "./routes/[age].tsx";
-import * as $1 from "./routes/api/joke.ts";
-import * as $2 from "./routes/api/view.ts";
-import * as $3 from "./routes/contact/index.tsx";
-import * as $4 from "./routes/github.tsx";
-import * as $5 from "./routes/index.tsx";
-import * as $6 from "./routes/resume/index.tsx";
+import * as $1 from "./routes/_middleware.ts";
+import * as $2 from "./routes/api/joke.ts";
+import * as $3 from "./routes/api/stats/view.ts";
+import * as $4 from "./routes/contact/index.tsx";
+import * as $5 from "./routes/github.tsx";
+import * as $6 from "./routes/index.tsx";
+import * as $7 from "./routes/resume/index.tsx";
 
 const manifest = {
 	routes: {
 		"./routes/[age].tsx": $0,
-		"./routes/api/joke.ts": $1,
-		"./routes/api/view.ts": $2,
-		"./routes/contact/index.tsx": $3,
-		"./routes/github.tsx": $4,
-		"./routes/index.tsx": $5,
-		"./routes/resume/index.tsx": $6,
+		"./routes/_middleware.ts": $1,
+		"./routes/api/joke.ts": $2,
+		"./routes/api/stats/view.ts": $3,
+		"./routes/contact/index.tsx": $4,
+		"./routes/github.tsx": $5,
+		"./routes/index.tsx": $6,
+		"./routes/resume/index.tsx": $7,
 	},
 	islands: {},
 	baseUrl: import.meta.url,
