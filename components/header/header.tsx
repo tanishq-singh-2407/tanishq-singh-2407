@@ -13,7 +13,7 @@ export function Header(props: JSX.HTMLAttributes<HTMLElement>) {
 			<div class="hidden md:flex w-full" />
 
 			<Link
-				href="https://github.com/tanishq-singh-2301"
+				href="https://github.com/tanishq-singh-2407"
 				target="_blank"
 				rel="noopener"
 				name="Github"
