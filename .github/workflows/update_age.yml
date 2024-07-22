@@ -31,4 +31,4 @@ jobs:
           
           git add README.md
           git commit -m ":stopwatch: [age-updated]: $age_years"
-          git push origin master
+          git push origin main
