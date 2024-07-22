@@ -1,0 +1,34 @@
+name: Update Age
+on:
+  schedule:
+    - cron: "0 0 * * *"
+
+  workflow_dispatch:
+
+jobs:
+  schedule:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Update Age
+        run: |
+          birthdate_seconds=$(date -d "2005-07-24" +%s)
+          current_date_seconds=$(date +%s)
+
+          age_years=$(echo "scale=10; ($current_date_seconds - $birthdate_seconds) / (365.25 * 24 * 60 * 60)" | bc)
+
+          {
+            head -n 4 README.md
+            echo "    age = $age_years"
+            tail -n +6 README.md
+          } > temp && mv temp "README.md"
+
+          git config --global user.name "Tanishq Singh"
+          git config --global user.email "tanishq-singh-2407@users.noreply.github.com"
+          
+          git add README.md
+          git commit -m ":stopwatch: [age-updated]: $age_years"
+          git push origin master
