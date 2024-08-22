@@ -2,7 +2,7 @@
 
 ```python
 class Personal_Stuff:
-    age = 19.0774241387
+    age = 19.0801640492
     college = "IIT BHU"
     hobbies = ["listening to songs", "painting"]
     sports = {
